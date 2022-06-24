@@ -1,5 +1,7 @@
 
-
+<?php
+session_start();
+?>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/login.css" >
@@ -16,7 +18,22 @@
     </div>
     
     <div class="button-panel">
-		<input type="submit" class="button" title="Verify Email" name="verify" value="Verify"></input>
+		<input type="submit" class="button" title="Verify Email" name="verify" value="Verify">
     </div>
+  </form>
+  <?php 
+    if($otp == $_GET['otp']){
+      $q = "INSERT INTO `signup`(`email`, `password`, `otp`, `status`) VALUES ('$email','$password','$otp','1')";
+      echo '<script> alert("Registered Successfully! Please Go To Login Section.") </script>';
+     
+      header("refresh:1;url=https://taxlix.rf.gd/login_form.php");
+
+    }
+    else{
+      echo '<script> alert("Invalid OTP") </script>';
+    }
+
+    if($_SESSION['logged'])
+  ?>
 </body>
 </html>

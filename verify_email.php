@@ -8,9 +8,9 @@
 <body>
 <div class="form-wrapper">
   
-  <form action=".php">
+  <form >
     <h3>Verify Your Email</h3>
-	
+	<?php echo  $otp; ?>
     <div class="form-item">
 		<input type="text" name="otp" placeholder="enter otp" autofocus required>
     </div>

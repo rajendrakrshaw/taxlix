@@ -5,11 +5,13 @@
     
     if(isset($_GET['signup'])) {
         $email = $_GET['email'];
-        $q = "SELECT email FROM signup";
+        $q = "SELECT `email` FROM `signup`";
         $emails = mysqli_query($conn, $q);
+        $emails = $emails->fetch_array();
         $found = false;
         foreach($emails as $mail){
-            echo '<script> console.log({{$mail}}) </script>';
+            // echo "hhello";
+            // echo $mail;
 
             if($email == $mail) {
                

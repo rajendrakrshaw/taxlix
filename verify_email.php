@@ -18,7 +18,7 @@ session_start();
     </div>
     
     <div class="button-panel">
-		<input type="submit" class="button" title="Verify Email" name="verify" value="Verify">
+		<input type="submit" class="button" title="Verify Email"  value="Verify">
     </div>
   </form>
   <?php 

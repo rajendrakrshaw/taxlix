@@ -9,7 +9,8 @@
         $emails = mysqli_query($conn, $q);
         $found = false;
         foreach($emails as $mail){
-            echo $mail;
+            echo '<script> console.log({{$mail}}) </script>';
+
             if($email == $mail) {
                
                 $found = true;

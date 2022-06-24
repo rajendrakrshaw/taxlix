@@ -18,7 +18,7 @@
                 break;
             }
         }
-        if($_SESSION['notRegistered']){
+        if(!$_SESSION['notRegistered']){
             echo '<script> alert("Email Already Registered! Please Go To Login Section.") </script>';
             // header("refresh:1;url=https://taxlix.epizy.com/login_form.php");
         }

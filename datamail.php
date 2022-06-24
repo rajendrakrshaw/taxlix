@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 if($_SESSION['notRegistered']){
 include "smtp/class.phpmailer.php"; // include the class file name
     //$email = "mailforrahul01@gmail.com";
@@ -21,7 +21,7 @@ include "smtp/class.phpmailer.php"; // include the class file name
     $mail->SetFrom("tihcollegespace@gmail.com", "TIH College Space"); //From address of the mail
     // put your while loop here like below,
     $mail->Subject = "Your One Time Password is"; //Subject od your mail
-    $mail->AddAddress($SESSION['email'], ""); //To address who will receive this email
+    $mail->AddAddress($email, ""); //To address who will receive this email
     $mail->MsgHTML("<b>Your otp is <h1>".$otp."</h1> <br/><br/>by <a href='http://tihcollegespace.epizy.com'>tihcollegespace</a></b>"); //Put your body of the message you can place html code here
     //$mail->AddAttachment("images/asif18-logo.png"); //Attach a file here if any or comment this line,
     $send = $mail->Send(); //Send the mails

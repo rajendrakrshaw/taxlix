@@ -9,8 +9,9 @@
         $emails = mysqli_query($conn, $q);
         $found = false;
         foreach($emails as $mail){
+            echo $mail;
             if($email == $mail) {
-                echo $mail;
+               
                 $found = true;
                 break;
             }

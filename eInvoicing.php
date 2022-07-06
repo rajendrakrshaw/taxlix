@@ -3542,7 +3542,7 @@ height: fit-content !important;
 	width: 100%;
 	height: auto;
 	position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
 }
 .controls {

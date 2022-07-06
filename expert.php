@@ -3483,7 +3483,7 @@ height: fit-content !important;
 
 <!--Section 1 -->
 <!---->
-<div class="lil-max-w-screen-xl lil-mx-auto guitar lil-pt-20 sm:lil-pt-8">
+<div class="lil-max-w-screen-xl lil-mx-auto guitar lil-pt-10 sm:lil-pt-20">
     <section
         class="lil-flex lil-container lil-flex-wrap hero-section lil-pb-40 md:lil-pt-24 md:lil-items-start md:lil-flex-col-reverse sm:lil-pt-8 sm:lil-pb-0 sm:lil-flex-col-reverse sm:lil-relative">
         <div class="lil-w-1/2 md:lil-w-full sm:lil-w-full sm:lil-pt-8">
@@ -3529,44 +3529,6 @@ height: fit-content !important;
         <h2 class="lil-text-center lil-py-24 sm:lil-py-8 sm:lil-text-left">Over<span class="lil-text-blue-350"> 80,000</span>
             tax experts trust us</h2>
         <div id="verticalPromiseTabs" class="lil-flex lil-items-center sm:lil-flex-wrap">
-            <div class="promise-segment-tabs lil-w-1/3 sm:lil-w-full sm:lil-sticky">
-                <ul
-                    class="lil-vertical-promise-tabs lil-h-full xl:lil-justify-between lg:lil-justify-between md:lil-justify-between">
-                    <li class="lil-promise-tab lil-my-5 lil-promise-tab-active lil-tab-cta">
-                        <a class="lil-flex lil-items-center">
-                            <div class="lil-w-1/6">
-                                <img
-                                    src="https://assets1.cleartax-cdn.com/cleartax/images/1606390058_savingstoyourclient.svg" />
-                            </div>
-                            <div class="lil-w-5/6 lil-pl-6">
-                                <h6 class="sm:lil-text-s-20"> Saving for your clients </h6>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="lil-promise-tab lil-my-5 lil-tab-cta">
-                        <a class="lil-flex lil-items-center">
-                            <div class="lil-w-1/6">
-                                <img
-                                    src="https://assets1.cleartax-cdn.com/cleartax/images/1606390091_speedforyourpractice.svg" />
-                            </div>
-                            <div class="lil-w-5/6 lil-pl-6">
-                                <h6 class="sm:lil-text-s-20"> Speed for your practice </h6>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="lil-promise-tab lil-my-5 lil-tab-cta">
-                        <a class="lil-flex lil-items-center">
-                            <div class="lil-w-1/6">
-                                <img
-                                    src="https://assets1.cleartax-cdn.com/cleartax/images/1606385682_stressfree.svg" />
-                            </div>
-                            <div class="lil-w-5/6 lil-pl-6">
-                                <h6 class="sm:lil-text-s-20"> Peace of mind for you </h6>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
             <div class="lil-w-3/4 sm:lil-w-full">
                 <div id="savingForClients"
                     class="verticalPromiseTabsContent lil-items-center lil-flex lil-justify-center sm:lil-flex-col-reverse">
@@ -4401,50 +4363,7 @@ height: fit-content !important;
             </div>
         </div>
     </div>
-    <!--Section 10 -->
-    <!---->
-    <div class="lil-pt-40 sm:lil-pt-20">
-        <div class="lil-flex lil-justify-between">
-            <div class="lil-w-2/5 sm:lil-w-full">
-                <h4 class="sm:lil-text-s-28">
-                    Process multiple <br class="xl:lil-hidden lg:lil-hidden md:lil-hidden" /> client filings together
-                </h4>
-                <div class="lil-pt-10 xl:lil-hidden lg:lil-hidden md:lil-hidden">
-                    <img src="https://assets1.cleartax-cdn.com/cleartax/images/1604057171_clientfilingmcd.png"
-                        alt="McDonalds">
-                </div>
-                <div class="lil-py-10">
-                    <img src="https://assets1.cleartax-cdn.com/cleartax/images/1604057847_client_filings_user_client.png"
-                        alt="client server">
-                </div>
-                <div class="lil-flex lil-pt-8 lil-w-full">
-                    <div class="lil-w-1/6 xl:lil-w-1/12"><img
-                            src="https://assets1.cleartax-cdn.com/cleartax/images/1606456018_processanynumber.svg"
-                            height="40" width="40" /></div>
-                    <div class="lil-px-6 lil-w-5/6">
-                        <p class="lil-text-font-500 lil-font-bold lil-text-base">Process any number of client filings</p>
-                        <p class="lil-text-base lil-pt-2">Work on multiple client filings in parallel sessions through different tabs.</p>
-                    </div>
-                </div>
-                <div class="lil-flex lil-pt-8 sm:lil-w-full">
-                    <div class="lil-w-1/6 xl:lil-w-1/12"><img
-                            src="https://assets1.cleartax-cdn.com/cleartax/images/1606456030_improveteamproductivity.svg"
-                            height="40" width="40" /></div>
-                    <div class="lil-px-6 lil-w-5/6">
-                        <p class="lil-text-font-500 lil-font-bold lil-text-base">Improve team productivity</p>
-                        <p class="lil-text-base lil-pt-2">Distribute work among different team members smartly for higher team efficiency.</p>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="lil-w-1/2 lil-flex lil-items-center sm:lil-hidden">
-                <video width="100%" height="auto" autoplay muted loop class="lil-block lil-mx-auto">
-                    <source src="https://assets1.cleartax-cdn.com/cleartax/images/1608283487_multipleclients_multipletasks.mp4" type="video/mp4">
-                    Your browser does not support HTML video.
-                </video>
-            </div>
-        </div>
-    </div>
+
     <!--Section 11 -->
     <!---->
     <div class="lil-pt-40 sm:lil-pt-20">

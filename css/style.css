@@ -715,7 +715,6 @@ footer .footer .links{
 }
 footer .footer .links .leftFooter img{
   width: 175px;
-  /* margin-left: -170px; */
 }
 footer .footer .links .leftFooter p{
   margin-top: -55px;
@@ -1018,15 +1017,19 @@ ol li{
 }
 
 @media (max-width: 768px) {
-  h1{
+  #popularProducts h1, #associateBrands h1, .productsForEveryoneHeading h1, #productDesign h1, .serviceHeadings h1, #security h1, #feedback h1, .fq h1{
     font-size: 25px;
+    padding: 0px 15px;
   }
   h2{
     font-size: 22px;
   }
   #home{
     width: 100%;
+    height: auto;
     display: block;
+    margin: 25px auto;
+    padding: 50px 25px;
   }
   #home .heading{
     width: 100%;
@@ -1036,33 +1039,58 @@ ol li{
   #home .heading h1{
     text-align: center;
     margin-bottom: 25px;
+    padding: 10px 15px;
   }
   #home .heading a button{
     margin-left: 0px;
   }
   #home .card{
+    width: 310px;
     margin: 30px auto;
     margin-bottom: 80px;
   }
+  .contentBox {
+    padding: 25px 15px;
+  }
   .contentBox h1{
-    font-size: 28px;
+    font-size: 20px;
+  }
+  .contentBox p{
+    font-size: 12px;
+  }
+  .contentContainer{
+    padding: 25px 15px;
+  }
+  .popularProductContentBox{
+    width: 100%;
+  }
+  #associateBrands .logos{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 15px;
+  }
+  .productsForEveryoneHeading p{
+    padding: 10px 15px;
   }
   .prodcuctsVariety{
     display: block;
+    padding: 15px 25px;
   }
   .productsVarietyContainer{
     margin: 25px auto;
+    width: 75%;
   }
   .productDesignHeadings {
     display: block;
     margin: 25px 0px;
-    padding: 25px 100px;
+    padding: 25px;
   }
   .productDesignHeadings img {
-    width: 50%;
-    margin-left: 25%;
+    width: 100%;
   }
   .taxSaving {
+    text-align: center;
+    width: 100%;
     margin: 15px auto;
     font-size: 15px;
     padding: 15px;
@@ -1074,12 +1102,13 @@ ol li{
 
   .serviceHeadings p {
     font-size: 17px;
+    font-weight: 500;
     margin: 5px 0px;
-    padding: 25px 100px;
+    padding: 15px 25px;
     padding-top: 15px;
   }
   .servicesBoxContainer {
-    padding: 20px 100px;
+    padding: 10px 25px;
     display: block;
   } 
   .serviceBox {
@@ -1089,22 +1118,34 @@ ol li{
   }
   .securityHeadings {
     display: block;
-    padding: 0px 50px;
+    padding: 0px 25px;
   }
   .securityHeadings .securityLeftArea, .securityHeadings .securityRightArea {
-    width: 80%;
+    width: 100%;
     margin: 25px auto;
+  }
+  .securityLeftArea p{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
   }
   .securityLowerPart {
     display: block;
+    padding: 0px 15px;
+  }
+  .feedBackContainer{
+    padding: 10px 15px;
   }
   .profileHolder {
+    width: 100%;
+    padding: 10px 25px;
     display: block;
-    margin: 25px;
+    /* margin: 25px; */
   }
   .profileCard {
+    width: 100%;
     border: 1px solid white;
-    margin: 25px;
+    margin: 25px auto;
     padding: 15px;
   }
   .feedBackContainer .leftShift img {
@@ -1112,6 +1153,12 @@ ol li{
   }
   .feedBackContainer .rightShift img {
     display: none;
+  }
+  .questions{
+    padding: 10px 15px;
+  }
+  footer{
+    padding: 15px 10px;
   }
   footer .footer .links {
     display: block;
@@ -1143,5 +1190,19 @@ ol li{
   }
   #feedback p {
     font-size: 15px;
+    padding: 10px 25px;
+  }
+
+  .infoContainer{
+    width: 100%;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+  }
+  .box{
+    width: 100%;
+    margin: 15px;
+  }
+  .ProductContainer{
+    display: block;
   }
 }

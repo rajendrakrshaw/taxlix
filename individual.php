@@ -3481,7 +3481,7 @@ height: fit-content !important;
 
 <!--Section 1 -->
 <!--More Money in your pocket-->
-<div class="lil-max-w-screen-xl lil-mx-auto guitar lil-pt-20 sm:lil-pt-8">
+<div class="lil-max-w-screen-xl lil-mx-auto guitar lil-pt-10 sm:lil-pt-20">
 	<div
 		class="lil-container lil-flex lil-flex-wrap hero-section lil-pb-40 md:lil-pt-6 md:lil-items-start md:lil-flex-col-reverse sm:lil-pb-0 sm:lil-flex-col-reverse sm:lil-relative">
 		<div class="lil-w-1/2 md:lil-w-full sm:lil-w-full">
@@ -3866,15 +3866,6 @@ height: fit-content !important;
 	</div>
 </div>
 
-<div class="lil-fixed lil-left-0 lil-bottom-0 lil-bg-white lil-w-full lil-py-4 lil-items-center lil-px-2 lil-hidden sm:lil-flex">
-	<a onclick="handleTrack({label: 'sticky_bottom_button', obj: this})" class="lil-btn lil-btn-blue small-text lil-w-1/2 lil-mt-0 lil-mr-1 lil-whitespace-no-wrap" 
-	href='https://accounts.cleartax.in/v2?product=cleartax&return_path=L015QWNjb3VudC9zdGFydD9yZWY9bHAw'>
-	Start Filing
-	</a>
-	<a onclick="handleTrack({label: 'sticky_bottom_button', obj: this})" href="https://cleartax.in/save" class="lil-btn lil-btn-blue sm:lil-w-1/2 small-text sm:lil-mt-0">
-				Invest now
-	</a>
-</div>
 
 <!-- FOOTER -->
 

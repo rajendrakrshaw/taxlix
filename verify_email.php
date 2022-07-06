@@ -14,7 +14,7 @@ session_start();
     <h3>Verify Your Email</h3>
 	  <?php $_SESSION['otp'] = $otp; ?>
     <div class="form-item">
-		<input type="text" name="otp" placeholder="enter otp" autofocus required>
+		<input type="number" name="otp" placeholder="enter otp" autofocus required>
     </div>
     
     <div class="button-panel">

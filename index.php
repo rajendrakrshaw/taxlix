@@ -35,7 +35,7 @@
             <li><a href="#productsForEveryone">Products</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="links.php" target="_blank">More</a></li>
-            <li><a href="login.php" target="_blank">SignIn/SignUp</a></li>
+            <li><a href="login_form.php" target="_blank">SignIn/SignUp</a></li>
           </ul>
         </div>
         

@@ -45,7 +45,7 @@
 		}
   ?>
   <div class="reminder">
-    <p>Not a member? <a href="signup.php">Sign up now</a></p>
+    <p>Not a member? <a href="signup_form.php">Sign up now</a></p>
     <p><a href="#">Forgot password?</a></p>
   </div>
   

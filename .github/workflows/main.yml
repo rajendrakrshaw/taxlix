@@ -2,7 +2,7 @@ name: 🚀 Deploy website on push
 on: 
   push:
     branches:
-      - master
+      - dev
 
 jobs:
   FTP-Deploy-Action:
@@ -15,7 +15,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: 	ftpupload.net
+        server: 	ftp.taxlix.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: htdocs/
+       

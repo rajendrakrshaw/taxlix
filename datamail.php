@@ -1,13 +1,13 @@
 <?php
-session_start();
-if($_SESSION['valid']){
+// session_start();
+if($_SESSION['notRegistered']){
 include "smtp/class.phpmailer.php"; // include the class file name
     //$email = "mailforrahul01@gmail.com";
     // echo($email);
-    $_SESSION['email'] = $email;
+    // $_SESSION['email'] = $email;
     $otp = rand(111111,999999);
-    $queryy = "UPDATE `verification_data` SET `otp`='$otp' WHERE email='$email'";
-    mysqli_query($conn, $queryy);
+   // $queryy = "UPDATE `verification_data` SET `otp`='$otp' WHERE email='$email'";
+  //  mysqli_query($conn, $queryy);
     $mail = new PHPMailer; // call the class
     //$mail->SMTPDebug = 3;
     $mail->IsSMTP();
@@ -16,7 +16,7 @@ include "smtp/class.phpmailer.php"; // include the class file name
     $mail->SMTPAuth = true; //Whether to use SMTP authentication
     $mail->SMTPSecure = 'tls';
     $mail->Username = "tihcollegespace@gmail.com"; //Username for SMTP authentication any valid email created in your domain
-    $mail->Password = "Rahul@2001"; //Password for SMTP authentication
+    $mail->Password = "eahtveorvyravlsr"; //Password for SMTP authentication
     $mail->AddReplyTo("tihcollegespace@gmail.com", "TIH College Space"); //reply-to address
     $mail->SetFrom("tihcollegespace@gmail.com", "TIH College Space"); //From address of the mail
     // put your while loop here like below,
@@ -26,8 +26,8 @@ include "smtp/class.phpmailer.php"; // include the class file name
     //$mail->AddAttachment("images/asif18-logo.png"); //Attach a file here if any or comment this line,
     $send = $mail->Send(); //Send the mails
     if($send){
-        echo '<center><h3 style="color:#009933;">Mail sent successfully</h3></center>'.$_SESSION['user']['unique_id'];
-        include "otpform.php";
+        echo '<center><h3 style="color:#009933;">Mail sent successfully</h3></center>';
+        include "verify_email.php";
     }
     else{
         echo '<center><h3 style="color:#FF3300;">Mail error: </h3></center>'.$mail->ErrorInfo;

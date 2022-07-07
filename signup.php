@@ -1,7 +1,9 @@
 <?php
     ob_start();
     session_start();
-    $conn = mysqli_connect("localhost", "root", "", "taxlix");
+    // $conn = mysqli_connect("localhost", "root", "", "taxlix");
+    $conn = mysqli_connect("taxlix.com", "taxlixco_dev", "dev@taxlix", "taxlixco_taxlix");
+
     // $conn = mysqli_connect("sql207.epizy.com", "epiz_31860883", "AVfl0bjU2FPuOGv", "epiz_31860883_taxlix");
     if(isset($_GET['signup'])) {
         $email = $_GET['email'];

@@ -16,7 +16,7 @@ if (isset($_POST['login']))
 	if ($num_row > 0) 
 		{			
 			// $_SESSION['user_id']=$row['user_id'];
-			$_SESSION['logged'] = true;
+			$_SESSION['logged'] = false;
 			$_SESSION['user'] = $row;
 			header('location:client/dashboard.php');
             // header("url=https://taxlix.epizy.com/client/dashboard.php");

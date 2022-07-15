@@ -87,7 +87,7 @@
          <div class="profile-details">
            <!--<img src="profile.jpg" alt="profileImg">-->
            <div class="name_job">
-             <div class="name">Admin</div>
+             <div class="name"><?php echo $_SESSION['email']; ?></div>
              <!-- <div class="job">Web designer</div> -->
            </div>
          </div>

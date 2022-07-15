@@ -2,7 +2,7 @@
     ob_start();
     session_start();
     // $conn = mysqli_connect("localhost", "root", "", "taxlix");
-    $conn = mysqli_connect("localhost", "taxlixco_dev", "Taxlix_dev", "taxlixco_taxlix");
+    $conn = mysqli_connect("sql301.epizy.com", "epiz_32169318", "eyU7s1A71XX", "epiz_32169318_taxlix");
 
     // $conn = mysqli_connect("sql207.epizy.com", "epiz_31860883", "AVfl0bjU2FPuOGv", "epiz_31860883_taxlix");
     if(isset($_GET['signup'])) {
@@ -12,8 +12,8 @@
         $emails = $emails->fetch_array();
         $_SESSION['notRegistered'] = true;
         foreach($emails as $mail){
-            echo "hhello";
-            echo $mail;
+            // echo "hhello";
+            // echo $mail;
 
             if($email == $mail) {
                 $_SESSION['notRegistered'] = false;

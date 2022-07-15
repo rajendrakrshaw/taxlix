@@ -7,9 +7,10 @@
     // $conn = mysqli_connect("sql207.epizy.com", "epiz_31860883", "AVfl0bjU2FPuOGv", "epiz_31860883_taxlix");
     if(isset($_GET['signup'])) {
         $email = $_GET['email'];
-        $q = "SELECT `email` FROM `signup`";
+        $q = "SELECT `email`, 'status' FROM `signup`";
         $emails = mysqli_query($conn, $q);
         $emails = $emails->fetch_array();
+        echo $emails;
         $_SESSION['notRegistered'] = true;
         foreach($emails as $mail){
             // echo "hhello";

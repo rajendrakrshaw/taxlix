@@ -96,7 +96,7 @@
     </ul>
   </div>
   <section class="home-section">
-      <div class="text"><?php echo $_SESSION['email']; ?></div>
+      <div class="text"><?php echo $_SESSION['user']['email']; ?></div>
   </section>
   <script>
   let sidebar = document.querySelector(".sidebar");

@@ -13,7 +13,7 @@
       $query = mysqli_query($conn, $q);
       // $q = "INSERT INTO `login`(`email`, `password`) VALUES ('$email','$password')";
       echo '<script> alert("Registered Successfully! Please Go To Login Section.") </script>';
-     
+      session_abort();
       header("refresh:1;url=http://taxlix.com/login_form.php");
       
 

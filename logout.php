@@ -3,8 +3,9 @@ session_start();
 echo $_SESSION['logged'];
 echo $_SESSION['user']['email'];
 
-
-session_abort();
+$_SESSION['logged'] = false;
+echo $_SESSION['logged'];
+// session_abort();
 // header("refresh:1;url=http://rajendrakrshaw.rf.gd/");
 
 

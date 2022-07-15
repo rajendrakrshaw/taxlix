@@ -10,7 +10,7 @@
         $q = "SELECT `email`, 'status' FROM `signup`";
         $emails = mysqli_query($conn, $q);
         $emails = $emails->fetch_array();
-        echo $emails;
+        print $emails;
         $_SESSION['notRegistered'] = true;
         foreach($emails as $mail){
             // echo "hhello";

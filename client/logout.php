@@ -1,7 +1,10 @@
 <?php
 session_start();
+$_SESSION['logged'] = false;
+ 
 session_abort();
-header('location:./index.php');
+header("refresh:1;url=https://taxlix.epizy.com/");
+
 
 
 ?>

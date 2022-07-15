@@ -18,8 +18,8 @@ if (isset($_POST['login']))
 			// $_SESSION['user_id']=$row['user_id'];
 			$_SESSION['logged'] = true;
 			$_SESSION['user'] = $row;
-			// header('location:cleint/dashboard.php');
-            header("url=https://taxlix.epizy.com/client/dashboard.php");
+			header('location:client/dashboard.php');
+            // header("url=https://taxlix.epizy.com/client/dashboard.php");
 
 			
 		}

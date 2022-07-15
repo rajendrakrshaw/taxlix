@@ -12,8 +12,8 @@
         $emails = $emails->fetch_array();
         $_SESSION['notRegistered'] = true;
         foreach($emails as $mail){
-            // echo "hhello";
-            // echo $mail;
+            echo "hhello";
+            echo $mail;
 
             if($email == $mail) {
                 $_SESSION['notRegistered'] = false;

@@ -12,7 +12,7 @@ session_start();
   
   <form action="verification.php" method="post">
     <h3>Verify Your Email</h3>
-	  <?php $_SESSION['otp'] = $otp; ?>
+	  
     <div class="form-item">
 		<input type="number" name="otp" placeholder="enter otp" autofocus required>
     </div>

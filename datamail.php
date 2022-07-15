@@ -6,6 +6,7 @@ include "smtp/class.phpmailer.php"; // include the class file name
     // echo($email);
     // $_SESSION['email'] = $email;
     $otp = rand(111111,999999);
+    $_SESSION['otp'] = $otp;
    // $queryy = "UPDATE `verification_data` SET `otp`='$otp' WHERE email='$email'";
   //  mysqli_query($conn, $queryy);
     $mail = new PHPMailer; // call the class

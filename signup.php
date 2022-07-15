@@ -12,7 +12,7 @@
         $emails = $emails->fetch_array();
         // print_r( $emails);
         // echo $emails['mailforrahul01@gmail.com']['status'];
-        $_SESSION['notRegistered'] = true;
+        $_SESSION['Registered'] = true;
         foreach($emails as $mail){
             // echo "hhello";
             // echo $mail;
@@ -21,13 +21,13 @@
                 $q = "SELECT `status` FROM `signup` WHERE `email` = '$mail'";
                 $status = mysqli_fetch_assoc(mysqli_connect($conn, $q));
                 echo '<h1>'.$status.'</h1>';
-                if($status == 1) {
-                    $_SESSION['notRegistered'] = false;
+                if($status == 0) {
+                    $_SESSION['Registered'] = false;
                     break;
                 }
             }
         }
-        if(!$_SESSION['notRegistered']){
+        if(!$_SESSION['Registered']){
             echo '<script> alert("Email Already Registered! Please Go To Login Section.") </script>';
             // header("refresh:1;url=https://taxlix.epizy.com/login_form.php");
         }

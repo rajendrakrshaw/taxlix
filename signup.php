@@ -20,6 +20,7 @@
             if($email == $mail) {
                 $q = "SELECT `status` FROM `signup` WHERE `email` = '$email'";
                 $status = mysqli_fetch_assoc(mysqli_connect($conn, $q));
+                echo $status;
                 if($status == 1) {
                     $_SESSION['notRegistered'] = false;
                     break;

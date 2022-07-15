@@ -30,7 +30,7 @@
         }
         if($_SESSION['Registered']){
             echo '<script> alert("Email Already Registered! Please Go To Login Section.") </script>';
-            // header("refresh:1;url=https://taxlix.epizy.com/login_form.php");
+            // header("refresh:1;url=https://rajendrakrshaw.rf.gd/login_form.php");
         }
         else{
             $_SESSION['email'] = $email;

@@ -1,13 +1,16 @@
 <?php 
     session_start();
-    $conn = mysqli_connect("sql207.epizy.com", "epiz_31860883", "AVfl0bjU2FPuOGv", "epiz_31860883_taxlix");
+    $conn = mysqli_connect("sql301.epizy.com", "epiz_32169318", "eyU7s1A71XX", "epiz_32169318_taxlix");
+
     if(int($SESSION['otp']) == int($_POST['otp'])){
-      $q = "INSERT INTO `signup`(`email`, `password`, `otp`, `status`) VALUES ('$email','$password','$otp','1')";
-      $query = mysqli_query($conn, $q);
-      
       echo '<script> alert("Registered Successfully! Please Go To Login Section.") </script>';
+
+      // $q = "INSERT INTO `signup`(`email`, `password`, `otp`, `status`) VALUES ('$email','$password','$otp','1')";
+      // $query = mysqli_query($conn, $q);
+      
+      // echo '<script> alert("Registered Successfully! Please Go To Login Section.") </script>';
      
-      header("refresh:1;url=http://taxlix.com/login_form.php");
+      // header("refresh:1;url=http://taxlix.com/login_form.php");
       
 
     }

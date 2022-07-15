@@ -27,7 +27,7 @@ if (isset($_POST['login']))
 	else
 		{
 			// header("refresh:0;url=https://rajendrakrshaw.rf.gd/login_form.php");
-            echo '<script> alert("Invalid email and password!") </script>';
+            echo  "Invalid email and password!";
             header('location:login_form.php');
 
 		}

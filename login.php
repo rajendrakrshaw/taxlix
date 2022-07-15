@@ -28,7 +28,7 @@ if (isset($_POST['login']))
 		{
 			// header("refresh:0;url=https://rajendrakrshaw.rf.gd/login_form.php");
 			header('location:login_form.php');
-			echo 'Invalid Username and Password Combination';
+			echo '<script> alert("Invalid Username and Password Combination")</script>';
             
 
 		}

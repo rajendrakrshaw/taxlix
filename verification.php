@@ -1,7 +1,7 @@
 <?php 
     session_start();
     $conn = mysqli_connect("sql301.epizy.com", "epiz_32169318", "eyU7s1A71XX", "epiz_32169318_taxlix");
-
+    echo $SESSION['otp']." ".$_POST['otp'];
     if(int($SESSION['otp']) == int($_POST['otp'])){
       echo '<script> alert("Registered Successfully! Please Go To Login Section.") </script>';
 

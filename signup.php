@@ -7,6 +7,7 @@
     // $conn = mysqli_connect("sql207.epizy.com", "epiz_31860883", "AVfl0bjU2FPuOGv", "epiz_31860883_taxlix");
     if(isset($_GET['signup'])) {
         $email = $_GET['email'];
+        $password = $_GET['pass'];
         $q = "SELECT `email` FROM `signup`";
         $emails = mysqli_query($conn, $q);
         $emails = $emails->fetch_array();
@@ -33,7 +34,8 @@
         }
         else{
             $_SESSION['email'] = $email;
-            $_SESSION['password'] = $_GET['pass'];
+            $_SESSION['password'] = $password;
+            
             include "datamail.php";
             
             // echo "mail will be send";

@@ -2,15 +2,15 @@
 // session_start();
 $conn = mysqli_connect("sql301.epizy.com", "epiz_32169318", "eyU7s1A71XX", "epiz_32169318_taxlix");
 
-if($_SESSION['notRegistered']){
+if($_SESSION['Registered'] == false){
 include "smtp/class.phpmailer.php"; // include the class file name
     //$email = "mailforrahul01@gmail.com";
     // echo($email);
     // $_SESSION['email'] = $email;
     $otp = rand(111111,999999);
-    // $_SESSION['otp'] = $otp;
-   $queryy = "UPDATE `signup` SET `otp`='$otp' WHERE email='$email'";
-  //  mysqli_query($conn, $queryy);
+    $_SESSION['otp'] = $otp;
+    // $queryy = "INSERT INTO `signup`(`email`, `password`, `otp`, ) VALUES ('$email','$password','$otp')";
+    // mysqli_query($conn, $queryy);
     $mail = new PHPMailer; // call the class
     //$mail->SMTPDebug = 3;
     $mail->IsSMTP();

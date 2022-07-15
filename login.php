@@ -6,8 +6,8 @@ $conn = mysqli_connect("sql301.epizy.com", "epiz_32169318", "eyU7s1A71XX", "epiz
 
 if (isset($_POST['login']))
 {
-	$username = mysqli_real_escape_string($con, $_POST['email']);
-	$password = mysqli_real_escape_string($con, $_POST['pass']);
+	$username = $_POST['email'];
+	$password = $_POST['pass'];
 	
 	$query 		= mysqli_query($con, "SELECT * FROM `signup` WHERE `password`='$password' and `email`='$username'");
 	$row		= mysqli_fetch_array($query);

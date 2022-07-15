@@ -3,6 +3,8 @@
     $conn = mysqli_connect("sql301.epizy.com", "epiz_32169318", "eyU7s1A71XX", "epiz_32169318_taxlix");
     echo $_SESSION['otp'];
     echo $_POST['otp'];
+    echo $_SESSION['email'];
+    echo $_SESSION['password'];
 
     if($_SESSION['otp'] == $_POST['otp']){
       echo '<script> alert("Registered Successfully! Please Go To Login Section.") </script>';

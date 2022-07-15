@@ -91,7 +91,7 @@
              <!-- <div class="job">Web designer</div> -->
            </div>
          </div>
-         <i class='bx bx-log-out' id="log_out" ></i>
+         <input type="submit" class='bx bx-log-out' id="log_out" ></i>
      </li>
     </ul>
   </div>

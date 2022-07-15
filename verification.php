@@ -3,7 +3,7 @@
     $conn = mysqli_connect("sql301.epizy.com", "epiz_32169318", "eyU7s1A71XX", "epiz_32169318_taxlix");
     echo $_SESSION['otp'];
     echo $_POST['otp'];
-    if(int($SESSION['otp']) == int($_POST['otp'])){
+    if(int($_SESSION['otp']) == int($_POST['otp'])){
       echo '<script> alert("Registered Successfully! Please Go To Login Section.") </script>';
 
       // $q = "INSERT INTO `signup`(`email`, `password`, `otp`, `status`) VALUES ('$email','$password','$otp','1')";

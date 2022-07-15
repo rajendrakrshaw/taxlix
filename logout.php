@@ -5,8 +5,8 @@ echo $_SESSION['user']['email'];
 
 $_SESSION['logged'] = false;
 echo $_SESSION['logged'];
-session_abort();
-// header("refresh:1;url=http://rajendrakrshaw.rf.gd/");
+session_destroy();
+header("refresh:1;url=http://rajendrakrshaw.rf.gd/");
 
 
 

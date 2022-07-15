@@ -87,7 +87,7 @@
          <div class="profile-details">
            <!--<img src="profile.jpg" alt="profileImg">-->
            <div class="name_job">
-             <div class="name"><?php echo $_SESSION['email']; ?></div>
+             <div class="name">CLIENT</div>
              <!-- <div class="job">Web designer</div> -->
            </div>
          </div>
@@ -96,7 +96,7 @@
     </ul>
   </div>
   <section class="home-section">
-      <div class="text">Dashboard</div>
+      <div class="text"><?php echo $_SESSION['email']; ?></div>
   </section>
   <script>
   let sidebar = document.querySelector(".sidebar");

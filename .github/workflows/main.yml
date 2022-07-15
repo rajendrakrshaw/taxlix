@@ -18,4 +18,4 @@ jobs:
         server: 	ftpupload.net
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASS }}
-        server_dir: ./htdocs/
+        server_dir: htdocs/

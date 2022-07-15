@@ -11,6 +11,7 @@
         $emails = mysqli_query($conn, $q);
         $emails = $emails->fetch_array();
         print_r( $emails);
+        echo $emails['mailforrahul01@gmail.com']['status'];
         $_SESSION['notRegistered'] = true;
         foreach($emails as $mail){
             // echo "hhello";

@@ -9,9 +9,9 @@ if (isset($_POST['login']))
 	$username = $_POST['email'];
 	$password = $_POST['pass'];
 	
-	$query 		= mysqli_query($con, "SELECT * FROM `signup` WHERE `password`='$password' and `email`='$username'");
-	$row		= mysqli_fetch_array($query);
-	$num_row 	= mysqli_num_rows($query);
+	$query = mysqli_query($conn, "SELECT * FROM `signup` WHERE `password`='$password' and `email`='$username'");
+	$row = $query->fetch_array();
+	$num_row = mysqli_num_rows($query);
 	
 	if ($num_row > 0) 
 		{			

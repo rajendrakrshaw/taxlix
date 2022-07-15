@@ -91,7 +91,7 @@
              <!-- <div class="job">Web designer</div> -->
            </div>
          </div>
-         <a href="./logout.php"><i class='bx bx-log-out' id="log_out" ></i></a>
+         <a href="../logout.php"><i class='bx bx-log-out' id="log_out" ></i></a>
      </li>
     </ul>
   </div>

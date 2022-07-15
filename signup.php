@@ -7,19 +7,23 @@
     // $conn = mysqli_connect("sql207.epizy.com", "epiz_31860883", "AVfl0bjU2FPuOGv", "epiz_31860883_taxlix");
     if(isset($_GET['signup'])) {
         $email = $_GET['email'];
-        $q = "SELECT `email`, 'status' FROM `signup`";
+        $q = "SELECT `email` FROM `signup`";
         $emails = mysqli_query($conn, $q);
         $emails = $emails->fetch_array();
-        print_r( $emails);
-        echo $emails['mailforrahul01@gmail.com']['status'];
+        // print_r( $emails);
+        // echo $emails['mailforrahul01@gmail.com']['status'];
         $_SESSION['notRegistered'] = true;
         foreach($emails as $mail){
             // echo "hhello";
             // echo $mail;
 
             if($email == $mail) {
-                $_SESSION['notRegistered'] = false;
-                break;
+                $q = "SELECT `status` FROM `signup` WHERE `email` = '$email'";
+                $status = mysqli_fetch_assoc(mysqli_connect($conn, $q));
+                if($status == 1) {
+                    $_SESSION['notRegistered'] = false;
+                    break;
+                }
             }
         }
         if(!$_SESSION['notRegistered']){

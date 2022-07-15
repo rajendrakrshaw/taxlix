@@ -18,7 +18,7 @@
             // echo $mail;
 
             if($email == $mail) {
-                $q = "SELECT `status` FROM `signup` WHERE `email` = '$email'";
+                $q = "SELECT `status` FROM `signup` WHERE `email` = '$mail'";
                 $status = mysqli_fetch_assoc(mysqli_connect($conn, $q));
                 echo '<h1>'.$status.'</h1>';
                 if($status == 1) {

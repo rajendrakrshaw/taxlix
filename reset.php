@@ -7,7 +7,7 @@ if (isset($_POST['reset']))
 {
     $email = $_SESSION['email'];
     $password = $_POST['pass'];
-    echo $password;
+    // echo $password;
     $q = "UPDATE `signup` SET `password`='$password' WHERE `email` = '$email'";
     mysqli_query($conn, $q);
     echo '<script> alert("Password Reset Successfully!")</script>';

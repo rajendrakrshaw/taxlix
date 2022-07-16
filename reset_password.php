@@ -7,7 +7,7 @@
 <body>
 <div class="form-wrapper">
   
-  <form action="login.php" method="post">
+  <form action="otp.php" method="post">
     <h3>Enter Your Email</h3>
 	
     <div class="form-item">

@@ -2,7 +2,7 @@
 session_start();
 $conn = mysqli_connect("sql301.epizy.com", "epiz_32169318", "eyU7s1A71XX", "epiz_32169318_taxlix");
 
-if(isset($_POST['submit'])){
+if(isset($_POST['Submit'])){
 include "smtp/class.phpmailer.php"; // include the class file name
     //$email = "mailforrahul01@gmail.com";
     // echo($email);

@@ -8,7 +8,7 @@
 
     if($_SESSION['otp'] == $_POST['otp']){
       // echo '<script> alert("Registered Successfully! Please Go To Login Section.") </script>';
-    echo $_SESSION['otp'].$otp;
+    // echo $_SESSION['otp'].$otp;
       ?>
       
       <html>
@@ -19,7 +19,7 @@
       <body>
       <div class="form-wrapper">
         
-        <form action="" method="post" >
+        <form action="reset.php" method="post" >
           <h3>Reset Password</h3>
           <div class="form-item">
               <input 
@@ -46,16 +46,17 @@
           </div>
         </form>
         <?php
-          if (isset($_POST['reset']))
-              {
-                  echo "hello";
-                  $password = $_POST['pass'];
-                  $q = "UPDATE `signup` SET `password`='$password' WHERE `email` = '$email'";
-                  mysqli_query($conn, $q);
-                  echo '<script> alert("Password Reset Successfully!")</script>';
-                  header("refresh:1;url=http://rajendrakrshaw.rf.gd/login_form.php");
+        //   if (isset($_POST['reset']))
+        //       {
+        //           echo "hello";
+        //           $password = $_POST['pass'];
+        //           echo $password;
+        //           $q = "UPDATE `signup` SET `password`='$password' WHERE `email` = '$email'";
+        //           mysqli_query($conn, $q);
+        //           echo '<script> alert("Password Reset Successfully!")</script>';
+        //           header("refresh:1;url=http://rajendrakrshaw.rf.gd/login_form.php");
                   
-              }
+        //       }
          
         ?>
       </div>

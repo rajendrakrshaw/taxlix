@@ -101,7 +101,7 @@
     }
     else{
       echo '<script> alert("Invalid OTP! OTP sent again.") </script>';
-      header("refresh:1;url=http://rajendrakrshaw.rf.gd/otp_form.php");
+      header("refresh:1;url=http://rajendrakrshaw.rf.gd/otp.php");
     }
 
   ?>

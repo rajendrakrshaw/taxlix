@@ -16,7 +16,7 @@
     //   session_abort();
     //   header("refresh:1;url=http://taxlix.com/login_form.php");
     }
-    else{
+    else if($_SESSION['otp'] != $_POST['otp']){
       echo '<script> alert("Invalid OTP! OTP sent again.") </script>';
       header("refresh:1;url=http://rajendrakrshaw.rf.gd/otp_form.php");
     }

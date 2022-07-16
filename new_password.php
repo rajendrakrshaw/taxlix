@@ -11,7 +11,7 @@ $conn = mysqli_connect("sql301.epizy.com", "epiz_32169318", "eyU7s1A71XX", "epiz
 <body>
 <div class="form-wrapper">
   
-  <form action="" >
+  <form action="" method="get" >
     <h3>Reset Password</h3>
     <div class="form-item">
         <input 

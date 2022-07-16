@@ -14,7 +14,7 @@
 		<input type="text" name="email" required="required" placeholder="Email" autofocus required></input>
     </div>
     <div class="button-panel">
-		<input type="submit" class="button" title="Log In" name="login" value="Login"></input>
+		<input type="submit" class="button" title="Get OTP" name="login" value="Get OTP"></input>
     </div>
   </form>
  

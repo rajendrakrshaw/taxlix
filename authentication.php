@@ -8,7 +8,7 @@
 
     if($_SESSION['otp'] == $_POST['otp']){
       // echo '<script> alert("Registered Successfully! Please Go To Login Section.") </script>';
-    
+    echo $_SESSION['otp'].$otp;
       ?>
       
       <html>
@@ -99,7 +99,7 @@
     //   session_abort();
     //   header("refresh:1;url=http://taxlix.com/login_form.php");
     }
-    else if($_SESSION['otp'] != $otp){
+    else{
       echo '<script> alert("Invalid OTP! OTP sent again.") </script>';
       header("refresh:1;url=http://rajendrakrshaw.rf.gd/otp_form.php");
     }

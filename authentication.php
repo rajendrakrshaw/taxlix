@@ -15,8 +15,6 @@
     //   echo '<script> alert("Registered Successfully! Please Go To Login Section.") </script>';
     //   session_abort();
     //   header("refresh:1;url=http://taxlix.com/login_form.php");
-      
-
     }
     else{
       echo '<script> alert("Invalid OTP! OTP sent again.") </script>';

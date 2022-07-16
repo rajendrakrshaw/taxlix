@@ -40,7 +40,7 @@ $conn = mysqli_connect("sql301.epizy.com", "epiz_32169318", "eyU7s1A71XX", "epiz
   <?php
 	if (isset($_GET['reset']))
 		{
-			
+			echo "hello";
 			$password = $_GET['pass'];
             $q = "UPDATE `signup` SET `password`='$password' WHERE `email` = '$email'";
             mysqli_query($conn, $q);

@@ -19,7 +19,7 @@
       <body>
       <div class="form-wrapper">
         
-        <form action="" method="get" >
+        <form action="" method="post" >
           <h3>Reset Password</h3>
           <div class="form-item">
               <input 
@@ -46,10 +46,10 @@
           </div>
         </form>
         <?php
-          if (isset($_GET['reset']))
+          if (isset($_POST['reset']))
               {
                   echo "hello";
-                  $password = $_GET['pass'];
+                  $password = $_POST['pass'];
                   $q = "UPDATE `signup` SET `password`='$password' WHERE `email` = '$email'";
                   mysqli_query($conn, $q);
                   echo '<script> alert("Password Reset Successfully!")</script>';

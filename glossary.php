@@ -2,7 +2,7 @@
     include 'header.php';
 ?>
 <div class="glossaryContainer">
-    <img src="./images/glossary.jpg" alt="">
+    <h1>Glossary</h1>
     <div class="economy">
         <img src="./images/economy.webp" alt="">
         <div class="economyContent">

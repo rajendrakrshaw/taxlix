@@ -1,7 +1,7 @@
 <?php
     include 'header.php';
 ?>
-<div class="glossaryContainer">
+<div class="helpCenterContainer">
 
 </div>
 <footer>

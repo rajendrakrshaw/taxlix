@@ -14,9 +14,9 @@
 
 /* ===== Colours ===== */
 :root{
-    --body-color: #E4E9F7;
-    --nav-color: #4070F4;
-    --side-nav: #010718;
+    --body-color: #fff;
+    --nav-color: #071a4fee;
+    --side-nav: #051132;
     --text-color: #FFF;
     --search-bar: #F2F2F2;
     --search-text: #010718;
@@ -25,7 +25,6 @@ html{
   scroll-behavior: smooth;
 }
 body{
-    height: 100vh;
     background-color: var(--body-color);
 }
 
@@ -41,17 +40,11 @@ h1{
   text-transform: uppercase;
   text-align: center;
   font-size: 40px;
-  background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23)), linear-gradient(266.03deg, #0E55B3 24.04%, #44F5E8 71.62%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #010718;
   padding: 15px 0px; 
+  text-shadow: 2px 2px 2px grey;
 }
 
-#popularProducts h1, #associateBrands h1, .productsForEveryoneHeading h1, #productDesign h1, .serviceHeadings h1, #security h1, #feedback h1, .fq h1{
-  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
-  margin: 50px 0px;
-
-}
 /*---------------------------------
   || NAVBAR  SECTION STARTS HERE ||
   ---------------------------------*/
@@ -62,10 +55,85 @@ nav{
     left: 0;
     height: 70px;
     width: 100%;
-    background-color: var(--nav-color);
+    background-color: var(--side-nav);
     z-index: 100;
+    overflow: visible;
 }
-
+.upperNav{
+  background-color: #505457;
+  border-bottom: 1px solid #505457;
+  color: white;
+  text-align: right;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.upperNav p{
+  color: white;
+  padding: 5px 0px;
+  margin: 0px 15px;
+  font-size: 16px;
+}
+.upperNav a{
+  color: wheat;
+  padding: 0px 5px;
+  font-size: 15px;
+}
+.upperNav p:hover{
+  transform: scale(1.1);
+}
+.upperNav button.callBack{
+  border-radius: 5px;
+  padding: 5px 8px;
+  margin: 5px 15px;
+  color: grey;
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+}
+.upperNav button.callBack:hover{
+  transform: scale(1.1);
+}
+.upperNav button.callBack a{
+  color: #0d2b7c;
+  font-weight: 600;
+}
+.callBackContainer{
+  width: 40%;
+  margin: 10% auto;
+  margin-bottom: 3%;
+  display: block;
+  box-shadow: 2px 2px 6px black;
+  text-align: center;
+}
+.callbackDetails{
+  margin: 10px 25px;
+  padding: 25px 50px;
+}
+.callbackDetails input[type="text"]{
+  width: 85%;
+  margin: 10px 0px;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid grey;
+  font-size: 16px;
+  font-weight: 600;
+}
+.callbackDetails input[type="submit"]{
+  margin: 25px auto;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight:500;
+  cursor: pointer;
+  color: white;
+  background-color: #0a438d;
+  border: none;
+  border-radius: 5px;
+}
+.callbackDetails input[type="submit"]:hover{
+  transform: scale(1.2);
+}
 body.dark nav{
     border: 1px solid #393838;
 
@@ -74,9 +142,8 @@ body.dark nav{
 nav .nav-bar{
     position: relative;
     height: 100%;
-    max-width: 1000px;
     width: 100%;
-    background-color: var(--nav-color);
+    background-color: var(--side-nav);
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
@@ -109,8 +176,31 @@ nav .nav-bar .logo a img{
 }
 
 .nav-bar .nav-links li{
-    margin: 0 5px;
+    margin: 0 10px;
     list-style: none;
+    position: relative;
+    padding: 0px 25px;
+    /* border: 1px solid red; */
+}
+.nav-links li ul{
+  width: 175%;
+  display: none;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: -60%;
+  background: #051132;
+  padding: 10px 5px;
+  text-align: center;
+}
+.nav-links li:hover > ul{
+  display: block;
+  overflow: visible;
+}
+.nav-bar .nav-links li ul li{
+  list-style: none;
+  position: relative;
+  padding: 8px  0px;
+  margin: 10px 0px;
 }
 
 .nav-links li a{
@@ -119,8 +209,9 @@ nav .nav-bar .logo a img{
     font-weight: 400;
     color: var(--text-color);
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 0px;
 }
+
 
 .nav-links li a::before{
     content: '';
@@ -128,17 +219,31 @@ nav .nav-bar .logo a img{
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
+    height: 2.5px;
+    width: 85%;
+    border-radius: 8px;
     background-color: var(--text-color);
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease-in-out;
 }
-
+.nav-links li ul li a{
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px 0px;
+}
+.nav-links li ul li a::before{
+  display: none;
+}
+.nav-links li ul li:hover, .nav-links li:hover{
+  transform: scale(1.1);
+}
 .nav-links li:hover a::before{
     opacity: 1;
 }
+
 
 .nav-bar .darkLight-searchBox{
     display: flex;
@@ -240,6 +345,100 @@ nav .nav-bar .logo a img{
 /*--------------------------------------------
   || RESPONSIVE NAVBAR  SECTION ENDS HERE ||
   --------------------------------------------*/
+/*-------------------------------
+  || CONTACT SECTION STARTS HERE ||
+  -------------------------------*/
+.contactContainer{
+  width: 72%;
+  margin: 8.7% auto;
+  margin-bottom: 5%;
+  padding: 15px 25px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-align: center;
+}
+.contactFields{
+  width: 95%;
+  margin: 3% auto;
+  padding: 0px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contactContainer .contactFields form{
+  width: 48%;
+  padding: 15px 25px;
+  box-shadow: 2px 2px 6px black;
+  background-color:  #e4e4e459;
+  border-radius: 5px;
+}
+.contactContainer .contactFields .contactDetails{
+  margin: 25px;
+  padding:20px;
+}
+
+.contactContainer .contactFields form input[type="text"]{
+  width: 100%;
+  margin: 10px 0px;
+  padding: 5px ;
+  border-radius: 3px;
+  outline: none;
+  border: 1.2px solid grey;
+  font-size: 15px;
+  font-weight: 600;
+}
+.contactContainer .contactFields form textarea{
+  width: 100%;
+  height: 150px;
+  border: 1px solid grey;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 3px;
+  outline: none;
+  padding: 5px 10px;
+}
+.contactContainer .contactFields form input[type="submit"]{
+  padding: 5px 18px;
+  color: white;
+  background-color: #0a438d;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.contactContainer .contactFields form input[type="submit"]:hover{
+  transform: scale(1.1);
+}
+.contactContainer .contactFields .companyDetails{
+  width: 48%;
+  padding: 15px 25px;
+
+}
+.email, .address, .contactNumber{
+  border: 1px solid grey;
+  margin: 15px 25px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px black;
+  padding: 25px 15px;
+}
+.address i, .email i, .contactNumber i{
+  font-size: 32px;
+}
+.address h1, .email h1, .contactNumber h1{
+  font-size: 25px;
+  padding: 5px 0px;
+}
+.address p, .email p, .contactNumber p{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/*-------------------------------
+  || CONTACT SECTION ENDS HERE ||
+  -------------------------------*/
 
 
 
@@ -247,31 +446,33 @@ nav .nav-bar .logo a img{
   || HOME  SECTION STARTS HERE ||
   -------------------------------*/
 #home{
-  /* border: 1px solid red; */
-  margin-top: 70px;
   width: 100%;
-  height: 85vh;
-  padding: 50px 100px;
+  height: 100vh;
+  padding: 50px 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--body-color);
-  color: #4070F4;
+  background-image: url('../images/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #0b2260;
 }
+
 #home .heading h1{
   font-size: 80px;
-  background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23)), linear-gradient(266.03deg, #0E55B3 24.04%, #44F5E8 71.62%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   line-height: 70px;
+  color: #0a438d;
   text-align: left;
   padding: 0px 0px;
   text-transform: capitalize;
+  text-shadow: 5px 4px 3px grey;
 }
 #home .heading p{
   font-size: 23px;
   line-height: 25px;
   margin-bottom: 50px;
+  font-weight: 600;
 }
 #home .heading a button{
   position: relative;
@@ -279,65 +480,101 @@ nav .nav-bar .logo a img{
   margin-left: 50px;
   padding: 5px 20px;
   background-color: transparent;
-  color: #0E55B3;
+  color: #fff;
+  background-color: #0E55B3;
   outline: none;
-  border: 2px solid #44F5E8;
+  border: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
+  border-radius: 3px;
 }
-#home .heading a button:hover{
-  box-shadow:  0px 0px 0px 2px #4070F4;
+.getUpdates form .thirdRow button:hover, #home .heading a button:hover{
+  transform: scale(1.1);
 }
-#home .card{
-  border: 1px solid white;
-  width: 380px;
-  background-color: rgba(0, 0, 0, 0.219);
-  backdrop-filter: blur(10px);
-  background: linear-gradient(109.74deg, rgba(255, 255, 255, 0.147) 0.67%, rgba(0, 0, 0, 0.1) 98.28%);
-  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(50px);
+
+.getUpdates{
+  width: 48%;
+  margin-top: 5%;
+}
+.getUpdates form{
+  margin: 5px 0px;
+  padding: 15px 15px;
   border-radius: 8px;
-  padding: 15px 25px;
+  height: 100%;
+  box-shadow: 2px 2px 6px black;
+  background-color: rgba(255, 254, 254, 0.744);
 }
-#home .card p{
-  font-size: 18px;
+.getUpdates .updatesContainer{
+  padding: 0px 15px;
 }
-#home .card .membership{
+.getUpdates form .firstRow, .getUpdates .secondRow, .getUpdates .thirdRow{
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  font-weight: 700;
 }
-#home .card .membership img{
-  width: 80px;
-}
-.card .number{
+.getUpdates form input[type="text"]{
   width: 100%;
-  margin-top: 45px;
-  justify-content: space-between;
-  font-weight: 700;
-  font-size: 18px;
-}
-#home .card .validation{
-  width: 75%;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid rgba(128, 128, 128, 0.752);
+  padding: 5px 8px;
+  border-radius: 3px;
+  margin: 5px 8px;
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 10px;
+  font-weight: 600;
 }
-#home .card .validation p{
+.getUpdates form .updatesContainer p{
+  font-weight: 600;
+}
+.getUpdates form input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  margin: 2.5px 5px;
+}
+.getUpdates form .thirdRow{
+  margin: 5px 0px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.getUpdates form .thirdRow select{
+  outline: none;
+  border: none;
+  /* border-bottom: 3px solid grey; */
+  font-weight: 600;
+  background-color: #051132;
+  color: white;
+  padding: 8px ;
+  border-radius: 3px;
+  font-size: 15px;
+}
+.getUpdates form .thirdRow select::-webkit-scrollbar{
+  display: none;
+}
+
+.getUpdates form .thirdRow button{
+  padding: 5px 18px;
+  margin-right: 25px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #0a2469;
+  color: white;
   font-size: 15px;
   font-weight: 500;
 }
 
-#home .card .validation .till{
+.reaches{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
 }
-#home .card .validation .till .label p{
-  font-size: 8px;
-  padding-right: 5px;
+.reaches h2{
+  font-size: 20px;
 }
-
-#home .card .name p{
+.reaches p{
+  font-size: 15px;
   font-weight: 600;
 }
 /*-----------------------------
@@ -348,16 +585,23 @@ nav .nav-bar .logo a img{
   || REACH  SECTION STARTS HERE ||
   -----------------------------*/
   .contentBox{
-    width: 100%;
+    width: 90%;
     padding: 50px 100px;
-    background: linear-gradient(180deg, #0E55B3 0%, #44F5E8 100%);
+    /* background: url('../images/background-1.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 5px solid #0a1b49;
+    /* border-radius: 25px; */
+    margin: 50px auto;
+    background-color: rgb(228, 225, 225);
   }
   .contentBox h1, .contentBox p{
-    color: white;
-    text-shadow: 0px 0px 1px white;
+    color: #010718;
+    text-shadow: 2px 2px 2px grey;
     padding: 0px 0px;
   }
 
@@ -371,6 +615,11 @@ nav .nav-bar .logo a img{
 /*-----------------------------------
   || PRODUCTS  SECTION STARTS HERE ||
   -----------------------------------*/
+#popularProducts{
+  width: 90%;
+  margin: 150px auto;
+  border: 1px solid black;
+  }
 .contentContainer{
   width: 100%;
   padding: 50px 100px;
@@ -417,12 +666,20 @@ nav .nav-bar .logo a img{
 /*------------------------------------------
   || ASSOCIATE BRANDS SECTION STARTS HERE ||
   ------------------------------------------*/
+#associateBrands{
+  width: 90%;
+  background-color: rgb(231, 230, 227);
+  margin: 150px auto;
+
+}
 #associateBrands .logos{
+  width: 100%;
   padding: 5px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(180deg, #0E55B3 0%, #44F5E8 100%);
+  border-bottom: 5px solid #010718;
+  margin-bottom: 150px;
 }
 #associateBrands .logos img{
   width: 120px;
@@ -437,13 +694,18 @@ nav .nav-bar .logo a img{
   -----------------------------------------------*/
 
 #productsForEveryone{
-  width: 100%;
+  width: 90%;
+  border: 1px solid green;
+  margin: 150px auto;
 }
 
 .productsForEveryoneHeading{
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
-  color: #4070F4;
+  color: #0a1b49;
+  border-radius: 25px;
+  margin: 10px auto;
 }
 .productsForEveryoneHeading p{
   padding: 10px 100px;
@@ -495,7 +757,9 @@ nav .nav-bar .logo a img{
   || PRODUCTS DESIGN SECTION STARTS HERE ||
   -----------------------------------------*/
   #productDesign{
-    width: 100%;
+    width: 90%;
+    margin: 150px auto;
+    border: 1px solid navy;
   }
   
   .productDesignHeadings{
@@ -527,10 +791,12 @@ nav .nav-bar .logo a img{
   || SERVICES  SECTION STARTS HERE ||
   -----------------------------------*/
   #services{
-    width: 100%;
+    width: 90%;
     text-align: center;
     color: #0E55B3;
     font-size: 16px;
+    margin: 150px auto;
+    border: 1px solid red;
   }
   .serviceHeadings p{
     font-size: 20px;
@@ -576,7 +842,9 @@ nav .nav-bar .logo a img{
   || SECURITY SECTION STARTS HERE ||
   ------------------------------*/
 #security{
-  width: 100%;
+  width: 90%;
+  margin: 150px auto;
+  border: 1px solid blue;
 }
 .securityHeadings{
   display: flex;
@@ -616,8 +884,10 @@ nav .nav-bar .logo a img{
   || FEEDBACK SECTION STARTS HERE ||
   ----------------------------------*/
 #feedback{
-  width: 100%;
+  width: 90%;
   color: #0E55B3;
+  margin: 150px auto;
+  border: 1px solid yellow;
 }
 #feedback p{
   padding: 25px 100px;
@@ -673,6 +943,16 @@ nav .nav-bar .logo a img{
 /*------------------------------
   || F&Q  SECTION STARTS HERE ||
   ------------------------------*/
+.fq{
+  width: 90%;
+  margin: 150px auto;
+  border: 1px solid red;
+
+}
+.fq h1{
+  width: 100%;
+  margin: 10px auto;
+}
 .questions{
   padding: 50px 100px;
 }
@@ -688,6 +968,16 @@ nav .nav-bar .logo a img{
 .query{
   color: #0E55B3;
 }
+.query .mail, .query .call{
+  padding:  0px 15px ;
+  font-weight: 600;
+}
+.call {
+  margin-top: 5px;
+}
+.query .mail a, .query .call a{
+  font-weight: 500;
+}
 /*----------------------------
   || F&Q  SECTION ENDS HERE ||
   ----------------------------*/
@@ -700,8 +990,8 @@ nav .nav-bar .logo a img{
   ---------------------------------*/
 footer{
   width: 100%;
-  padding: 50px 100px;
-  background: var(--nav-color);
+  padding: 25px 50px;
+  background: var(--side-nav);
   backdrop-filter: blur(10px);
   color: var(--text-color);
   margin-top: 50px;
@@ -709,32 +999,30 @@ footer{
 }
 footer .footer .links{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   border-top: 1px solid rgba(192, 192, 192, 0.222);
 }
 footer .footer .links .leftFooter img{
-  width: 175px;
+  width: 50%;
+  margin-left: -50%;
 }
-footer .footer .links .leftFooter p{
-  margin-top: -55px;
-  font-size: 18px;
-  margin-bottom: 25px;
-  text-align: left;
-}
+
 
 footer .footer .links .leftFooter .socialLinks ul{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 50px;
+  width: 40%;
+  margin: 25px 0px;
 }
 footer .footer .links .leftFooter .socialLinks ul li a{
   font-size: 28px;
-  color: white;
+  color: rgb(136, 118, 118);
 }
 footer .footer .links .leftFooter .socialLinks ul li a:hover{
-  color: grey;
+  color: white;
 }
 footer .footer .links .rightFooter{
   display: flex;
@@ -748,20 +1036,28 @@ footer .footer .links .rightFooter{
 }
 footer .footer .links .rightFooter .usefulLinks, footer .footer .links .rightFooter .community, footer .footer .links .rightFooter .partners{
   padding: 0px 15px;
-  color: var(--text-color);
+  color: white;
+  text-transform: uppercase;
 }
 footer .footer .links .rightFooter .usefulLinks a, footer .footer .links .rightFooter .community a, footer .footer .links .rightFooter .partners a{
-  color: var(--text-color);
+  color: grey;
   font-size: 15px;
 }
 footer .footer .links .rightFooter .usefulLinks a:hover, footer .footer .links .rightFooter .community a:hover, footer .footer .links .rightFooter .partners a:hover{
-  color: grey;
+  color: white;
 }
 footer .footer .copyright{
+  width: 100%;
+  margin: 0 auto;
   font-size: 15px;
   padding: 15px 0px;
   border-top: 1px solid rgba(192, 192, 192, 0.222);
 }
+
+.copyright .logo, .copyright .text{
+  font-size: 18px;
+}
+
 /*---------------------------------
   || FOOTER  SECTION ENDS HERE ||
   ---------------------------------*/
@@ -824,23 +1120,20 @@ footer .footer .copyright{
 .aboutContainer, .glossaryContainer, .careerContainer, .termsPoliciesContainer, .trustSafetyContainer{
   border: 1px solid silver;
   width: 75%;
-  margin: 85px auto;
-  padding: 25px 50px;
+  margin: 10% auto;
+  padding: 15px 50px;
   border-radius: 5px;
   margin-bottom: 5px;
   list-style: lower-greek;
 }
 .about{
-  margin: 20px auto;
-  padding: 20px;
+  margin: 0px auto;
+  padding: 0px 20px;
 }
-.about img, .glossaryContainer img, .careerContainer img, .termsPoliciesContainer img{
+.about h1, .glossaryContainer h1, .careerContainer h1, .termsPoliciesContainer h1{
   width: 100%;
-  height: 145px;
+  text-align: center;
   margin-bottom: 50px;
-}
-.glossaryContainer img, .careerContainer img{
-  height: 180px;
 }
 .teamIntro h2{
   text-align: center;
@@ -951,9 +1244,13 @@ ol li{
 .safetyContent{
   text-align: center;
 }
-.safetyContent h2{
-  font-size: 30px;
+.trustSafetyContainer p{
+  font-size: 20px;
   color: #0E55B3;
+  text-align: center;
+}
+.safetyContent p{
+  font-size: 16px;
 }
 .safeGuard, .safeGuardFeatures{
   display: flex;
@@ -1028,8 +1325,8 @@ ol li{
     width: 100%;
     height: auto;
     display: block;
-    margin: 25px auto;
-    padding: 50px 25px;
+    margin: 35% auto;
+    padding: 15px;
   }
   #home .heading{
     width: 100%;
@@ -1164,7 +1461,7 @@ ol li{
     display: block;
   }
   footer .footer .links .leftFooter img {
-    width: 175px;
+    width: 60%;
     margin-left: 0px;
   }
   footer .footer .links .leftFooter p {

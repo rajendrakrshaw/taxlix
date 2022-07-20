@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- === Coding by CodingLab | www.codinglabweb.com === -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,76 +17,139 @@
     <title>Taxlix</title>
 </head>
 <body> 
-  <header>
-    <nav>
-      <div class="nav-bar">
-        <i class='bx bx-menu sidebarOpen' ></i>
-        <span class="logo navLogo"><a href="#"><img src="images/Logo.png" alt="#logo"></a></span>
-        
-        <div class="menu">
-          <div class="logo-toggle">
-            <span class="logo"><a href="#"><img src="images/Logo.png" alt="#logo"></a></span>
-            <i class='bx bx-x siderbarClose'></i>
-          </div>
-          
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#productsForEveryone">Products</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="links.php" target="_blank">More</a></li>
-            <li><a href="login_form.php" target="_blank">SignIn/SignUp</a></li>
-          </ul>
+  <nav>
+    <div class="upperNav">
+    <p class="call">Call : <a href="tel:9088668829"> +91 90886 68829</a></p>
+    <p class="mail">email : <a href="mailto:figgitech@gmail.com">support@taxlix.com</a></p>
+    <button class="callBack"><a href="callback.php">Request a Callback</a></button>
+    </div>
+    <div class="nav-bar">
+      <i class='bx bx-menu sidebarOpen' ></i>
+      <span class="logo navLogo"><a href="#"><img src="images/Logo.png" alt="#logo"></a></span>
+      
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo"><a href="#"><img src="images/Logo.png" alt="#logo"></a></span>
+          <i class='bx bx-x siderbarClose'></i>
         </div>
         
-        <div class="darkLight-searchBox">
+        <ul class="nav-links darkLight-searchBox">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#productsForEveryone">Products</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="about.php" target="_blank">About</a></li>
+          <li><a href="contact.php" target="_blank">Contact</a></li>
+           <li><a href="#">More</a>
+            <ul>
+              <li><a href="careers.php" target="_blank">Career</a></li>
+              <li><a href="helpCenter.php" target="_blank">Help Center</a></li>
+              <li><a href="glossary.php" target="_blank">Glossary</a></li>
+              <li><a href="trust&Safety.php" target="_blank">Trust and Safety</a></li>
+              <li><a href="products.php" target="_blank">Products</a></li>
+              <li><a href="services.php" target="_blank">Services</a></li>
+            </ul>
+          </li>
+          <li><a href="login_form.php" target="_blank" style="border-radius: 5px; background-color: #fff; color: #05085e; font-size:14px; padding: 5px 12px;">SignIn/SignUp</a></li>
           <div class="dark-light">
             <i class='bx bx-moon moon'></i>
             <i class='bx bx-sun sun'></i>
           </div>
-        </div>
-      </div>
-    </nav>
-    
-    <!-- HOME SECTION STARTS HERE  -->
-    <div id="home">
-      <div class="heading">
-        <h1>Save  Money,<br>Save Time.</h1>
-        <p>India's largest tax and financial <br> services software platform</p>
-        <!-- <button type="submit">Get Started</button> -->
-        <a href="signup.php" target="_blank"><button>Get Started</button></a>
-      </div>
-      
-      <!-- CARD SECTION STARTS HERE  -->
-      <div class="card">
-        <div class="membership">
-          <p>MEMBERSHIP</p>
-          <img src="./images/taxLix.png" alt="#logo" class="logo">
-        </div>
-        <div class="number">
-          <label>7531 &nbsp;&nbsp;&nbsp;&nbsp; 8564 &nbsp;&nbsp;&nbsp;&nbsp; 4521 &nbsp;&nbsp;&nbsp;&nbsp; 3324</label>
-        </div>
-        
-        <div class="validation">
-          <div class="no">
-            <p>4566</p>
-          </div>
-          <div class="till">
-            <div class="label">
-              <p>VALID <br>THRU </p>
-            </div>
-            <div class="date">
-              <p>09/25</p>
-            </div>
-          </div>
-        </div>
-        <div class="name">
-          <p>JHON SMITH</p>
-        </div>
+        </ul>
       </div>
     </div>
-    <!-- CARD & HOME SECTION ENDS HERE  -->
     
-    <!-- REACH SECTION STARTS HERE  -->
+  </nav>
+  <!-- HOME SECTION STARTS HERE  -->
+  <div id="home">
+    <div class="heading">
+      <h1>Save  Money,<br>Save Time.</h1>
+      <p>India's largest tax and financial <br> services software platform</p>
+      <!-- <button type="submit">Get Started</button> -->
+      <a href="signup.php" target="_blank"><button>Get Started</button></a>
+    </div>
+    
+    <!-- GET UPDATES SECTION STARTS HERE  -->
+    <div class="getUpdates">
+      <form action="#" method="POST">
+        <h1>Get Updates</h1>
+        <div class="updatesContainer">
+          <div class="firstRow">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="secondRow">
+            <input type="text" name="mobile" placeholder="Your Mobile" required>
+            <input type="text" name="whatsappNumber" placeholder="Your Whatsapp Number" required>
+          </div>
+          <div class="thirdRow">
+            <select name="state" id="" required>
+              <option value="#" selected required>Choose...</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chattisgarh">Chattisgarh</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujrat">Gujrat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnatka">Karnatka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamilnadu">Tamilnadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+              <option value="Andaman & Nicobar Islands">Andaman & Nicobar Islands</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Dadra Nagar Haveli & Daman Diu">Dadra Nagar Haveli & Daman Diu</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+              <option value="Ladakh">Ladakh</option>
+              <option value="Lakshadeep">Lakshadeep</option>
+              <option value="Puducherry">Puducherry</option>
+            </select>
+            <button type="submit">Get Updates</button>
+          </div>
+          <p>Get updates on Whatsapp <input type="checkbox" name="whatsapp" id="" checked></p> 
+        </div>
+        <div class="reaches">
+          <div class="updateContainer">
+            <h2>50,000+</h2>
+            <p>Happy Customers</p>
+            
+          </div>
+          <div class="updateProfessional">
+            <h2>300+</h2>
+            <p>Professionals</p>
+          </div>
+          <div class="updatePartner">
+            <h2>250+</h2>
+            <p>Partners</p>
+          </div>
+        </div>
+      </form>
+      
+    </div>
+    
+
+  </div>
+  <!-- CARD & HOME SECTION ENDS HERE  -->
+  
+  <!-- REACH SECTION STARTS HERE  -->
+  <header>
     <div class="reach">
       <div class="contentBox">
         <div class="activeUsers">
@@ -142,15 +204,6 @@
           <p>G1-G9 filings made 3x faster</p>
         </a>
         
-        <!-- <a href="taxConsultant.php" target="_blank" class="popularProductContentBox">
-          <div class="icon">
-            <div class="rectangleBox">
-              <img src="./images/icons/user.png" alt="">
-            </div>
-          </div>
-          <h2>Tax Consultants</h2>
-          <p>ITR & GST filing, business & legal compliance</p>
-        </a> -->
         
       </div>
     </div>
@@ -161,19 +214,19 @@
       <h1>Associated Brands</h1>
       <div class="logos">
         <div class="logo1">
-          <img src="./images/Associate.png" alt="">
+          <img src="./images/swiggy.png" alt="">
         </div>
         <div class="logo1">
-          <img src="./images/Associate.png" alt="">
+          <img src="./images/bosch.png" alt="">
         </div>
         <div class="logo1">
-          <img src="./images/Associate.png" alt="">
+          <img src="./images/hero.png" alt="">
         </div>
         <div class="logo1">
-          <img src="./images/Associate.png" alt="">
+          <img src="./images/mahindra.png" alt="">
         </div>
         <div class="logo1">
-          <img src="./images/Associate.png" alt="">
+          <img src="./images/zomato.png" alt="">
         </div>
       </div>
     </div>
@@ -354,7 +407,7 @@
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, dignissimos? Suscipit neque ratione, vitae expedita possimus cumque magni libero fugiat ullam quaerat deserunt dicta? Iste.</p>
       <div class="feedBackContainer">
         <div class="leftShift">
-          <img src="./images/icons/Upward Arrow.png" alt="#arrow">
+          <!-- <img src="./images/icons/Upward Arrow.png" alt="#arrow"> -->
         </div>
         <div class="profileHolder">
           <div class="profileCard">
@@ -388,18 +441,9 @@
           </div>
         </div>
         <div class="rightShift">
-          <img src="./images/icons/Upward Arrow.png" alt="#arrow">
+          <!-- <img src="./images/icons/Upward Arrow.png" alt="#arrow"> -->
         </div>
       </div>
-      <!-- <div class="serviceTry">
-        <div class="tryHeading">
-          <h2>Let's try our service now !</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia suscipit est cum eaque corporis at?</p>
-        </div>
-        <div class="allServices">
-          <a href="signup.php" target="_blank">Get Started</a>
-        </div>
-      </div> -->
     </div>
     <!-- SERVICE SECTION ENDS HERE  -->
         
@@ -448,44 +492,6 @@
     ?>
   </footer>
   
-  <script type="text/javascript">
-    const body = document.querySelector("body"),
-    nav = document.querySelector("nav"),
-    modeToggle = document.querySelector(".dark-light"),
-    searchToggle = document.querySelector(".searchToggle"),
-    sidebarOpen = document.querySelector(".sidebarOpen"),
-    siderbarClose = document.querySelector(".siderbarClose");
-
-    let getMode = localStorage.getItem("mode");
-      if(getMode && getMode === "dark-mode"){
-        body.classList.add("dark");
-      }
-
-    // js code to toggle dark and light mode
-    modeToggle.addEventListener("click" , () =>{
-      modeToggle.classList.toggle("active");
-      body.classList.toggle("dark");
-
-      // js code to keep user selected mode even page refresh or file reopen
-      if(!body.classList.contains("dark")){
-          localStorage.setItem("mode" , "light-mode");
-      }else{
-          localStorage.setItem("mode" , "dark-mode");
-      }
-    });
-
-    //   js code to toggle sidebar
-    sidebarOpen.addEventListener("click" , () =>{
-      nav.classList.add("active");
-    });
-
-    body.addEventListener("click" , e =>{
-      let clickedElm = e.target;
-
-      if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
-        nav.classList.remove("active");
-      }
-    });
-  </script>
+  
 </body>
 </html>

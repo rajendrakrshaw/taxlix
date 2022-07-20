@@ -5,7 +5,7 @@
     <div class="aboutContainer">
         <!-- <h1>About Us</h1> -->
         <div class="about">
-            <img src="./images/about.webp" alt="">
+            <h1>About Us</h1>
             <h2>Introduction</h2>
             <p>We provide products that execute flawlessly during any kind of surge so that you don’t have to bother about reliability. Ingests and processes any amount of data any time of the month, effortlessly.</p> <br>
             <p>Our mission is to simplify finances, save money and time for millions of Indian businesses and people. We are a technology company that builds trusted, useful and insightful platforms for our clients to run their finances and improve their relationship with money.</p> <br>

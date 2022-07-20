@@ -3,9 +3,9 @@
 ?>
 <div class="trustSafetyContainer">
     <!-- <img src="./images/trustSafety.jpg" alt=""> -->
+    <h1>Welcome To Trust and Safety Center</h1>
+    <p>We Protect Your Data so that you can use our services worry-free.</p>
     <div class="safetyContent">
-        <h2>Welcome To Trust and Safety Center</h2>
-        <p>We Protect Your Data so that you can use our services worry-free.</p>
         <div class="safeGuard">
             <div class="safeGuardContainer">
                 <h2>We protect you data.</h2>

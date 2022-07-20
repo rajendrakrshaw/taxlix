@@ -2,7 +2,7 @@
     include 'header.php';
 ?>
 <div class="careerContainer">
-    <img src="./images/career.webp" alt="">
+    <h1>Career with us</h1>
     <div class="intrapreneur">
         <div class="intrapreneurContent">
             <h2>Be an Intrapreneur</h2>
